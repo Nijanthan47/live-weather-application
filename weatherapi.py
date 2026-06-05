@@ -15,7 +15,7 @@ lat = geo_data["results"][0]["latitude"]
 lon = geo_data["results"][0]["longitude"]
 
 # Weather Forecast API
-weather_url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&daily=temperature_2m_max,temperature_2m_min&forecast_days=4"
+weather_url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&daily=temperature_2m_max,temperature_2m_min&forecast_days=3"
 
 weather_response = requests.get(weather_url)
 
